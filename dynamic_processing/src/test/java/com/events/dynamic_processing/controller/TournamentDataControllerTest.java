@@ -23,6 +23,8 @@ import static org.mockito.ArgumentMatchers.eq;
  */
 @ExtendWith(MockitoExtension.class)
 class TournamentDataControllerTest {
+    @Mock private TournamentService tournamentService;
+
     @Mock private ObjectMapper mapper;
     @InjectMocks private TournamentDataController tournamentController;
 
