@@ -1,13 +1,34 @@
 # events
 Manage different data sources with identical json structure (but different properties)
-The correct way is to do it with jackson polymorphism but I cant get past these two errors:
 
-1)
-https://stackoverflow.com/questions/72396593/jackson-mapper-could-not-resolve-subtype-of-simple-type-class-missing-type
+Example request for dynamic_processing
+
+{
+    "source": "Data Source 2",
+    "tournamentRequest": {
+        "tournamentUUID": "87fc6650-e114-4179-9aef-6a9a13030f80",
+        "golfCourse": "Happy Days Golf Club",
+        "competitionName": "South West Invitational",
+        "hostCountry": "United States Of America",
+        "epochStart": "1638349200",
+        "epochFinish": "1638468000",
+        "rounds": "2",
+        "playerCount": "35"
+    }
+}
 
 
-And when I beyond that
 
+example request for implementation that doesnt use Jackson Inheritance
 
-2)
-https://stackoverflow.com/questions/15833979/java-jackson-deserialize-complex-polymorphic-object-model-jsonmappingexception
+ {
+        "tournamentUUID": "87fc6650-e114-4179-9aef-6a9a13030f80",
+        "golfCourse": "Happy Days Golf Club",
+        "competitionName": "South West Invitational",
+        "hostCountry": "United States Of America",
+        "epochStart": "1638349200",
+        "epochFinish": "1638468000",
+        "rounds": "2",
+        "playerCount": "35"
+
+}
