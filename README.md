@@ -19,7 +19,7 @@ Example request for dynamic_processing
 
 
 
-example request for implementation that doesnt use Jackson Inheritance
+example request for events
 
  {
         "tournamentUUID": "87fc6650-e114-4179-9aef-6a9a13030f80",
